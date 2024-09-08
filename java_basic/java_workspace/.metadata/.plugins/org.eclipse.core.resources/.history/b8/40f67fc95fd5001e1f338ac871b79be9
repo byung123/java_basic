@@ -1,0 +1,30 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Quiz2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("크기 >> ");
+		int length = sc.nextInt();
+		int[] num = new int[length];
+		
+		System.out.println("입력");
+		for(int i = 0; i < length; i++) {
+			num[i] = sc.nextInt();
+		}
+		
+		System.out.println("숫자입력");
+		int count = sc.nextInt();
+		int n = 0;
+		for(int i = 0; i < length; i++) {
+			if(num[i] == count) {
+				n++;
+			} else {
+				continue;
+			}
+		}
+		System.out.println("결과) " + n);
+	}
+}

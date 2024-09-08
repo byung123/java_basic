@@ -1,0 +1,24 @@
+package exam;
+
+public class Example01 {
+	public static void main(String[] args) {
+		/*
+		 * charAt() : 문자열에서 문자 하나를 추출할 수 있는 메소드
+		 */
+		String str = "abcde";
+		System.out.println("str문자열 0번째 인덱스 : " + str.charAt(0));
+		System.out.println("str문자열 1번째 인덱스 : " + str.charAt(1));
+		System.out.println("str문자열 2번째 인덱스 : " + str.charAt(2));
+		System.out.println("str문자열 3번째 인덱스 : " + str.charAt(3));
+		System.out.println("str문자열 4번째 인덱스 : " + str.charAt(4));
+		
+		//공백도 포함됨
+		String str1 = "Hello World";
+		System.out.println("str1 5번째 인덱스 : " + str1.charAt(5)); //공백이라 아무것도 안나옴
+		
+		// length() : 문자열의 길이 반환
+		System.out.println(str.length());
+		System.out.println(str1.length());
+	}	
+}
+	
